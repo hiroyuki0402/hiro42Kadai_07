@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6QP-Zu-aIr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3wx-HK-sGJ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -10,8 +10,7 @@
         <!--Item-->
         <scene sceneID="4Vt-i5-ZUa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fqj-hl-31Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="3wx-HK-sGJ" customClass="MinusViewController" customModule="Exericise_07" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3wx-HK-sGJ" customClass="ViewController" customModule="Exericise_07" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nDd-1c-JDw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,7 +37,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqj-UG-d2v">
-                                <rect key="frame" x="153" y="270" width="107" height="36"/>
+                                <rect key="frame" x="139" y="270" width="149" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="gGY-Fd-hBe"/>
@@ -56,8 +55,8 @@
                             <constraint firstItem="f2E-0V-e95" firstAttribute="top" secondItem="4c7-Bw-Npk" secondAttribute="top" constant="15" id="F2L-eQ-SZq"/>
                             <constraint firstItem="4c7-Bw-Npk" firstAttribute="trailing" secondItem="BjE-vt-vWU" secondAttribute="trailing" constant="154" id="I4L-Gx-Zhe"/>
                             <constraint firstItem="BjE-vt-vWU" firstAttribute="leading" secondItem="4c7-Bw-Npk" secondAttribute="leading" constant="153" id="NiT-4P-hif"/>
-                            <constraint firstItem="4c7-Bw-Npk" firstAttribute="trailing" secondItem="eqj-UG-d2v" secondAttribute="trailing" constant="154" id="YfY-Ii-uDJ"/>
-                            <constraint firstItem="eqj-UG-d2v" firstAttribute="leading" secondItem="4c7-Bw-Npk" secondAttribute="leading" constant="153" id="emU-3g-jnl"/>
+                            <constraint firstItem="4c7-Bw-Npk" firstAttribute="trailing" secondItem="eqj-UG-d2v" secondAttribute="trailing" constant="126" id="YfY-Ii-uDJ"/>
+                            <constraint firstItem="eqj-UG-d2v" firstAttribute="leading" secondItem="4c7-Bw-Npk" secondAttribute="leading" constant="139" id="emU-3g-jnl"/>
                             <constraint firstItem="4c7-Bw-Npk" firstAttribute="trailing" secondItem="FHy-Cw-J9f" secondAttribute="trailing" constant="126" id="pFQ-Rh-vHK"/>
                             <constraint firstItem="4c7-Bw-Npk" firstAttribute="trailing" secondItem="f2E-0V-e95" secondAttribute="trailing" constant="126" id="pUW-37-nd9"/>
                             <constraint firstItem="eqj-UG-d2v" firstAttribute="top" secondItem="BjE-vt-vWU" secondAttribute="bottom" constant="43" id="tiW-f2-Zpe"/>
@@ -68,41 +67,13 @@
                     <tabBarItem key="tabBarItem" title="Item" id="Jj9-Kh-0rh"/>
                     <connections>
                         <outlet property="resultLabel" destination="eqj-UG-d2v" id="5O9-65-xmM"/>
-                        <outlet property="textField01" destination="f2E-0V-e95" id="05y-Bc-WVz"/>
-                        <outlet property="textField02" destination="FHy-Cw-J9f" id="dqu-Tq-qQj"/>
+                        <outlet property="textField1" destination="f2E-0V-e95" id="hFb-DE-AiE"/>
+                        <outlet property="textField2" destination="FHy-Cw-J9f" id="8gL-kU-hsc"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fqj-hl-31Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="388" y="870"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="dbg-o8-Veq">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6QP-Zu-aIr" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MeN-hI-okZ">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="aV0-ST-MyN" kind="relationship" relationship="viewControllers" id="j8G-Ax-PWG"/>
-                        <segue destination="3wx-HK-sGJ" kind="relationship" relationship="viewControllers" id="6wg-H2-mQS"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P0s-N5-et1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-18.840579710144929" y="108.48214285714285"/>
-        </scene>
-        <!--Addition-->
-        <scene sceneID="pjc-lF-jcp">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Addition" id="aV0-ST-MyN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="hKA-Vc-Vxu"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8fY-Pp-z1h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-180" y="503"/>
+            <point key="canvasLocation" x="386.95652173913044" y="869.86607142857144"/>
         </scene>
     </scenes>
 </document>

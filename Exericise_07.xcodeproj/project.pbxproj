@@ -17,6 +17,7 @@
 		3BE2615126C3B15200F785E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE2615026C3B15200F785E1 /* Assets.xcassets */; };
 		3BE2615426C3B15200F785E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE2615226C3B15200F785E1 /* LaunchScreen.storyboard */; };
 		3BE2615C26C3B26500F785E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE2615B26C3B26500F785E1 /* ViewController.swift */; };
+		E5B3C4F426F43A3E00778E3B /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3C4F326F43A3E00778E3B /* CustomTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		3BE2615326C3B15200F785E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BE2615526C3B15200F785E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BE2615B26C3B26500F785E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E5B3C4F326F43A3E00778E3B /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				3BE2615B26C3B26500F785E1 /* ViewController.swift */,
+				E5B3C4F326F43A3E00778E3B /* CustomTabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				3BE2614826C3B15000F785E1 /* AppDelegate.swift in Sources */,
 				3BE2614A26C3B15000F785E1 /* SceneDelegate.swift in Sources */,
+				E5B3C4F426F43A3E00778E3B /* CustomTabBarController.swift in Sources */,
 				3B32FC3426EB0AED00AD0C31 /* Calculation.swift in Sources */,
 				3BE2615C26C3B26500F785E1 /* ViewController.swift in Sources */,
 			);

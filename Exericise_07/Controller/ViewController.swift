@@ -11,23 +11,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet private var textField1: UITextField!
     @IBOutlet private var textField2: UITextField!
     @IBOutlet private var resultLabel: UILabel!
-    private var resultValue = 0
+
+    private var calculator: Calculation!
 
     @IBAction private func button(_ sender: Any) {
         let val1 = Int(textField1.text!) ?? 0
         let val2 = Int(textField2.text!) ?? 0
 
-        if let tabbarIndex = tabBarController?.selectedIndex {
-            switch Operator(rawValue: tabbarIndex) {
-            case .addition:
-                resultValue = Addition().calculate(val1: val1, val2: val2)
-            case .subtraction:
-                resultValue = Subtraction().calculate(val1: val1, val2: val2)
-            default:
-                return
-            }
-        }
-        updateLabel()
+        let resultValue = calculator.calculate(val1: val1, val2: val2)
+
+        resultLabel.text = String(resultValue)
         view.endEditing(true)
     }
 
@@ -38,7 +31,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
     }
 
-    private func updateLabel() {
-        resultLabel.text = String(resultValue)
+    func configure(calculator: Calculation) {
+        self.calculator = calculator
     }
 }

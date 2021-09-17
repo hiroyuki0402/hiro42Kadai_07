@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Custom Tab Bar Controller-->
         <scene sceneID="dbg-o8-Veq">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6QP-Zu-aIr" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6QP-Zu-aIr" customClass="CustomTabBarController" customModule="Exericise_07" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MeN-hI-okZ">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

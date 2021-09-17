@@ -11,10 +11,6 @@ protocol Calculation {
     func calculate(val1: Int, val2: Int) -> Int
 }
 
-enum Operator: Int {
-    case addition, subtraction
-}
-
 struct Addition: Calculation {
     func calculate(val1: Int, val2: Int) -> Int {
         val1 + val2
